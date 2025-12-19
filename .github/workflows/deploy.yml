@@ -27,9 +27,7 @@ jobs:
         working-directory: ./backend
 
       - name: Build del frontend (simulado)
-        run: |
-          npm install --force
-          npx vite build
+        run: npm run build-ci
         working-directory: ./frontend
 
       - name: Crear artefacto final
