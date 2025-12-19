@@ -24,5 +24,6 @@ jobs:
         working-directory: ./frontend
 
       - name: Ejecutar pruebas del frontend
-        run: npx vitest --run
+        run: npm install --force
+             npx --no-install vitest --run
         working-directory: ./frontend
