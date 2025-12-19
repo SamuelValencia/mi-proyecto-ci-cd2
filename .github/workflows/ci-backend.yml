@@ -24,5 +24,6 @@ jobs:
         working-directory: ./backend
 
       - name: Ejecutar pruebas del backend
-        run: npx jest --runInBand
+        run: npm install --force
+              npx --no-install jest --runInBand
         working-directory: ./backend
